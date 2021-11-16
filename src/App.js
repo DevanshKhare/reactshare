@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import {EmailShareButton, EmailIcon, FacebookIcon, FacebookShareButton} from "react-share";
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1>hello</h1>
+     <EmailShareButton subject="Test email" body="my name is <i>https://www.gmail.com</i>"  separator=" ">
+     
+     <EmailIcon size={32} round={true} />
+     </EmailShareButton>
+
+
+
+     {/* <FacebookShareButton url={shareUrl}>
+     <FacebookIcon size={40}/>
+    </FacebookShareButton> */}
     </div>
   );
 }
